@@ -8,10 +8,12 @@
 
 namespace RE
 {
+	class bhkWorld;
 	class BGSArtObject;
 	class BGSArtObjectCloneTask;
 	class BSLight;
 	class ReferenceEffectController;
+	class TESRace;
 
 	struct BSAnimationGraphEvent;
 
@@ -78,10 +80,19 @@ namespace RE
 
 		// members
 		RefAttachTechniqueInput                castingArtData;               // 64
+		std::uint64_t              unk68;             // 68
+		std::uint64_t              unk70;             // 70
+		NiNode*                    fireNode;          // 78
+		std::uint64_t              unk80;             // 80
+		std::uint64_t              unk88;             // 88
+		TESRace*                   casterRace;        // 90
+		bhkWorld*                  havokWorld;        // 98
+		std::uint64_t              unkA0;             // A0
+		std::uint64_t              unkA8;             // A8
 		NiPointer<BGSArtObjectCloneTask>       cloneTask;                    // B0
-		Actor*                                 actor;                        // B8
-		NiNode*                                magicNode;                    // C0
-		NiPointer<BSLight>                     light;                        // C8
+		Actor*                     owner;             // B8
+		NiNode*                    effectNode;        // C0
+		BSLight*                   effectLight;       // C8
 		InterruptHandler_t*                    interruptHandler;             // D0
 		BGSLoadGameSubBuffer                   loadGameSubBuffer;            // D8
 		BGSArtObject*                          castingArt;                   // E0
