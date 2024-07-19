@@ -714,6 +714,17 @@ namespace RE
 			inline constexpr REL::ID AddForm(static_cast<std::uint64_t>(20470));
 		}
 
+		namespace BGSOpenCloseForm
+		{
+			inline constexpr REL::ID GetOpenState(static_cast<std::uint64_t>(14180));
+			inline constexpr REL::ID SetOpenState(static_cast<std::uint64_t>(14179));
+		}
+
+		namespace BGSSaveLoadGame
+		{
+			inline constexpr REL::ID Singleton{ static_cast<std::uint64_t>(516851) };
+		}
+
 		namespace BGSSaveLoadManager
 		{
 			inline constexpr REL::ID Save(static_cast<std::uint64_t>(34818));
@@ -865,6 +876,11 @@ namespace RE
 			inline constexpr REL::ID SizeOf32(static_cast<std::uint64_t>(66963));
 			inline constexpr REL::ID SizeOf64(static_cast<std::uint64_t>(66964));
 			inline constexpr REL::ID SizeOfSize(static_cast<std::uint64_t>(66962));
+		}
+
+		namespace EffectArchetypes
+		{
+			inline constexpr REL::Offset Archetypes(static_cast<std::uint64_t>(500623));
 		}
 
 		namespace ExtraDataList
