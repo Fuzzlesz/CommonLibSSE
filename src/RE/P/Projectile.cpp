@@ -155,5 +155,11 @@ namespace RE
 		}
 
 		return LaunchArrow(a_result, a_shooter, a_ammo, a_weap, origin, angles);
+
+	void Projectile::Kill()
+	{
+		using func_t = decltype(&Projectile::Kill);
+		REL::Relocation<func_t> func{ Offset::Projectile::Kill };
+		return func(this);
 	}
 }

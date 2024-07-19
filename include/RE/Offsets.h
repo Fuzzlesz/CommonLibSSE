@@ -182,6 +182,11 @@ namespace RE
 			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(400447));
 		}
 
+		namespace CombatUtilities
+		{
+			inline constexpr REL::ID GetAngleToProjectedTarget(static_cast<std::uint64_t>(47286));
+		}
+
 		namespace Console
 		{
 			inline constexpr REL::ID SelectedRef(static_cast<std::uint64_t>(504099));
@@ -213,6 +218,57 @@ namespace RE
 			inline constexpr REL::ID SizeOf32(static_cast<std::uint64_t>(12141));
 			inline constexpr REL::ID SizeOf64(static_cast<std::uint64_t>(68221));
 			inline constexpr REL::ID SizeOfSize(static_cast<std::uint64_t>(68219));
+		}
+
+		namespace DialogueItem
+		{
+			inline constexpr REL::ID Ctor(static_cast<std::uint64_t>(35220));
+		}
+
+		namespace Effect
+		{
+			inline constexpr REL::ID SetDuration(static_cast<std::uint64_t>(11012));
+			inline constexpr REL::ID SetMagnitude(static_cast<std::uint64_t>(11008));
+		}
+
+		namespace EffectArchetypes
+		{
+			inline constexpr REL::ID Archetypes(static_cast<std::uint64_t>(358289));
+		}
+
+		namespace ExtraAliasInstanceArray
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186835));
+		}
+
+		namespace ExtraAshPileRef
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186727));
+		}
+
+		namespace ExtraCannotWear
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186685));
+		}
+
+		namespace ExtraCanTalkToPlayer
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186797));
+		}
+
+		namespace ExtraCharge
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186693));
+		}
+
+		namespace ExtraContainerChanges
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186995));
+		}
+
+		namespace ExtraCount
+		{
+			inline constexpr REL::ID Vtbl(static_cast<std::uint64_t>(186679));
 		}
 
 		namespace ExtraDataList
@@ -472,6 +528,20 @@ namespace RE
 		{
 			inline constexpr REL::ID Ctor(static_cast<std::uint64_t>(42336));
 			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(400864));
+		}
+
+		namespace ProcessLists
+		{
+			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(400315));
+			inline constexpr REL::ID ClearCachedFactionFightReactions(static_cast<std::uint64_t>(41410));
+			inline constexpr REL::ID StopCombatAndAlarmOnActor(static_cast<std::uint64_t>(41340));
+		}
+
+		namespace Projectile
+		{
+			inline constexpr REL::ID CastSpell(static_cast<std::uint64_t>(44206));
+			inline constexpr REL::ID Kill(static_cast<std::uint64_t>(44110));
+			inline constexpr REL::ID Launch(static_cast<std::uint64_t>(44108));
 		}
 
 		namespace RaceSexMenu
