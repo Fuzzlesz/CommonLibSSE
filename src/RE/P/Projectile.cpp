@@ -155,6 +155,7 @@ namespace RE
 		}
 
 		return LaunchArrow(a_result, a_shooter, a_ammo, a_weap, origin, angles);
+	};
 
 	void Projectile::Kill()
 	{
