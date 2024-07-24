@@ -67,25 +67,6 @@ namespace RE
 		};
 		static_assert(sizeof(ResultsCollector) == 0x20);
 
-		struct AddTargetData
-		{
-			Actor*                     caster;                // 00
-			MagicItem*                 magicItem;             // 08
-			Effect*                    effect;                // 10
-			TESBoundObject*            object;                // 18
-			IPostCreationModification* postCreationCallback;  // 20
-			ResultsCollector*          resultsCollector;      // 28
-			NiPoint3                   center;                // 30
-			float                      baseMagnitude;         // 3C
-			float                      power;                 // 40
-			MagicSystem::CastingSource castingSource;         // 44
-			bool                       isProjectile;          // 48
-			bool                       isDualCasting;         // 49
-			std::uint16_t              pad4A;                 // 4A
-			std::uint32_t              pad4C;                 // 4C
-		};
-		static_assert(sizeof(AddTargetData) == 0x50);
-
 		struct SpellDispelData
 		{
 			MagicItem*                    spell;         // 00

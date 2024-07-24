@@ -845,6 +845,11 @@ namespace RE
 			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(514287));
 		}
 
+		namespace CombatUtilities
+		{
+			inline constexpr REL::ID GetAngleToProjectedTarget(static_cast<std::uint64_t>(46022));
+		}
+
 		namespace Console
 		{
 			inline constexpr REL::ID SelectedRef(static_cast<std::uint64_t>(519394));
@@ -1140,6 +1145,13 @@ namespace RE
 		{
 			inline constexpr REL::ID Ctor(static_cast<std::uint64_t>(41257));
 			inline constexpr REL::ID Singleton(static_cast<std::uint64_t>(514706));
+		}
+
+		namespace Projectile
+		{
+			inline constexpr REL::ID CastSpell(static_cast<std::uint64_t>(43015));
+			inline constexpr REL::ID Kill(static_cast<std::uint64_t>(42930));
+			inline constexpr REL::ID Launch(static_cast<std::uint64_t>(42928));
 		}
 
 		namespace RaceSexMenu

@@ -235,29 +235,16 @@ namespace RE
 		static ProjectileHandle* LaunchArrow(ProjectileHandle* a_result, Actor* a_shooter, TESAmmo* a_ammo, TESObjectWEAP* a_weap, const NiPoint3& a_origin, const ProjectileRot& a_angles) noexcept;
 		static ProjectileHandle* LaunchArrow(ProjectileHandle* a_result, Actor* a_shooter, TESAmmo* a_ammo, TESObjectWEAP* a_weap) noexcept;
 
-		static BSPointerHandle<Projectile> Launch(const LaunchData& a_data);
-
 		void Kill();
 
 		// members
 		BSSimpleList<ImpactData*>              impacts;            // 098
 		NiTransform                            unk0A8;             // 0A8
-		float                                  unk0AC;             // 0AC
-		std::uint64_t                          unk0B0;             // 0B0
-		float                                  unk0B8;             // 0B8
-		float                                  unk0BC;             // 0BC
-		std::uint64_t                          unk0C0;             // 0C0
-		float                                  unk0C8;             // 0C8
-		float                                  unk0CC;             // 0CC
-		std::uint64_t                          unk0D0;             // 0D0
-		float                                  unk0D8;             // 0D8
 		float                                  unk0DC;             // 0DC
 		bhkSimpleShapePhantom*                 unk0E0;             // 0E0 - smart ptr
 		mutable BSSpinLock                     unk0E8;             // 0E8
 		NiPoint3                               velocity;           // 0F0
 		NiPoint3                               linearVelocity;     // 0FC
-		float                                  unk100;             // 100
-		float                                  unk104;             // 104
 		NiPointer<BSLight>                     light;              // 108 - smart ptr
 		void*                                  unk110;             // 110 - smart ptr
 		NiPointer<ActorCause>                  actorCause;         // 118
